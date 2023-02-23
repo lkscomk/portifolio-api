@@ -18,6 +18,8 @@ mail = Mail(app)
 
 
 class EnviarEmail(Resource):
+  def get(self):
+    return 'API PORTIFOLIO LUKAS'
 
   def post(self):
     email = request.json['email']
@@ -39,7 +41,7 @@ class EnviarEmail(Resource):
     return { 'mensagem': 'Email enviado com sucesso' }, 200
 
 
-api.add_resource(EnviarEmail, '/enviar-email')
+api.add_resource(EnviarEmail, '/', '/enviar-email')
 
 if __name__ == '__main__':
   app.run(host='0.0.0.0', port=8080)
