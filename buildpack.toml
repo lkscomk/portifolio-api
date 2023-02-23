@@ -4,5 +4,5 @@ name = "Python"
 [publish.Ignore]
 files = [
   "main.py",
-  "requirements.txt",
+  "-r requirements.txt",
 ]
