@@ -1,8 +1,0 @@
-[buildpack]
-name = "Python"
-
-[publish.Ignore]
-files = [
-  "main.py",
-  "-r requirements.txt",
-]
