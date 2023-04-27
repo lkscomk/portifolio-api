@@ -12,14 +12,12 @@ app.config['MAIL_SERVER'] = 'smtp.gmail.com'
 app.config['MAIL_PORT'] = 587
 app.config['MAIL_USE_TLS'] = True
 app.config['MAIL_USERNAME'] = 'storesumbrella@gmail.com'
-app.config['MAIL_PASSWORD'] = ''
+app.config['MAIL_PASSWORD'] = 'jrvxsgvryrqwxswe'
 
 mail = Mail(app)
 
 
 class EnviarEmail(Resource):
-  def get(self):
-    return 'API PORTIFOLIO LUKAS'
 
   def post(self):
     email = request.json['email']
@@ -41,7 +39,7 @@ class EnviarEmail(Resource):
     return { 'mensagem': 'Email enviado com sucesso' }, 200
 
 
-api.add_resource(EnviarEmail, '/', '/enviar-email')
+api.add_resource(EnviarEmail, '/enviar-email')
 
 if __name__ == '__main__':
   app.run(host='0.0.0.0', port=8080)

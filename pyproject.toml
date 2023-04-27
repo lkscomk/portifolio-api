@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "repl_nix_portifolio-api"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+Flask = "^2.2.2"
+Flask-Mail = "^0.9.1"
+Flask-RESTful = "^0.3.9"
+jwt = "^1.3.1"
+Flask-JWT-Extended = "^4.4.4"
+app = "^0.0.1"
+Flask-Cors = "^3.0.10"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
