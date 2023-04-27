@@ -23,7 +23,7 @@ A API foi desenvolvida usando Flask.
 
 ## Observações
 
-- É necessário informar as credenciais de envio de e-mail, para isso crie um arquivo `env` ou `.env` e coloque `EMAIL=o_email_que_vai_enviar` e `
+- É necessário informar as credenciais de envio de e-mail, para isso crie um arquivo `.env` e coloque `EMAIL=o_email_que_vai_enviar` e `
 SENHA=senha_do_email`
 - Lembre-se de atualizar o endpoint da requisição do front-end no arquivo `main.py` para o seu endereço de hospedagem.
 
