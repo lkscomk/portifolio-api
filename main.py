@@ -2,6 +2,10 @@ from flask import Flask, request
 from flask_restful import Resource, Api
 from flask_mail import Mail, Message
 from flask_cors import CORS
+import os
+
+email = os.environ.get('EMAIL')
+senha = os.environ.get('SENHA')
 
 app = Flask(__name__)
 CORS(app)
@@ -11,8 +15,8 @@ api = Api(app)
 app.config['MAIL_SERVER'] = 'smtp.gmail.com'
 app.config['MAIL_PORT'] = 587
 app.config['MAIL_USE_TLS'] = True
-app.config['MAIL_USERNAME'] = 'storesumbrella@gmail.com'
-app.config['MAIL_PASSWORD'] = 'jrvxsgvryrqwxswe'
+app.config['MAIL_USERNAME'] = email
+app.config['MAIL_PASSWORD'] = senha
 
 mail = Mail(app)
 

@@ -230,6 +230,17 @@ docs = ["sphinx (>=4.5.0,<5.0.0)", "sphinx-rtd-theme", "zope.interface"]
 tests = ["pytest (>=6.0.0,<7.0.0)", "coverage[toml] (==5.0.4)"]
 
 [[package]]
+name = "python-dotenv"
+version = "1.0.0"
+description = "Read key-value pairs from a .env file and set them as environment variables"
+category = "main"
+optional = false
+python-versions = ">=3.8"
+
+[package.extras]
+cli = ["click (>=5.0)"]
+
+[[package]]
 name = "pytz"
 version = "2022.7.1"
 description = "World timezone definitions, modern and historical"
@@ -274,7 +285,7 @@ testing = ["pytest (>=6)", "pytest-checkdocs (>=2.4)", "flake8 (<5)", "pytest-co
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.8"
-content-hash = "01548018569024285a29e55cfd37b9fab1c90b221f32d738dfe1d0df2b292b11"
+content-hash = "1e348b04aa455ca21d6f0a93890ebcb65722f3f9823da44288664f90fbf434e5"
 
 [metadata.files]
 aniso8601 = []
@@ -296,6 +307,7 @@ jwt = []
 markupsafe = []
 pycparser = []
 pyjwt = []
+python-dotenv = []
 pytz = []
 six = []
 werkzeug = []
